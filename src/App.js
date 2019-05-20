@@ -7,82 +7,97 @@ const catCharactersList = [
   {
     name: 'Octobi Wan Catnobi',
     srcUrl: 'https://octodex.github.com/images/octobiwan.jpg',
-    hash: '#3'
+    hash: '#3',
+    contrib: "https://github.com/cameronmcefee.png"
   },
   {
     name: 'Stormtroopocat',
     srcUrl: 'https://octodex.github.com/images/stormtroopocat.png',
-    hash: '#86'
+    hash: '#86',
+    contrib: "https://github.com/jeejkang.png"
   },
   {
     name: 'Doctocat Brown',
     srcUrl: 'https://octodex.github.com/images/doctocat-brown.jpg',
-    hash: '#68'
+    hash: '#68',
+    contrib: "https://github.com/jonrohan.png"
   },
   {
     name: 'Octocat De Los Muertos',
     srcUrl: 'https://octodex.github.com/images/octocat-de-los-muertos.jpg',
-    hash: '#56'
+    hash: '#56',
+    contrib:"https://github.com/cameronmcefee.png"
   },
   {
     name: 'Dunetocat',
     srcUrl: 'https://octodex.github.com/images/dunetocat.png',
-    hash: '#105'
+    hash: '#105',
+    contrib: "https://github.com/JohnCreek.png"
   },
   {
     name: 'Daftpunktocat-Thomas',
     srcUrl: 'https://octodex.github.com/images/daftpunktocat-thomas.gif',
-    hash: '#102'
+    hash: '#102',
+    contrib:"https://github.com/jeejkang.png"
   },
   {
     name: 'Heisencat',
     srcUrl: 'https://octodex.github.com/images/heisencat.png',
-    hash: '#78'
+    hash: '#78',
+    contrib: "https://github.com/jonrohan.png"
   },
   {
     name: 'Boxertocat',
     srcUrl: 'https://octodex.github.com/images/boxertocat_octodex.jpg',
-    hash: '#143'
+    hash: '#143',
+    contrib:"https://github.com/rubyjazzy.png"
   },
   {
     name: 'Justicetocat',
     srcUrl: 'https://octodex.github.com/images/justicetocat.jpg',
-    hash: '#136'
+    hash: '#136',
+    contrib:"https://github.com/heyhayhay.png"
   },
   {
     name: 'Gobble-o-tron',
     srcUrl: 'https://octodex.github.com/images/gobbleotron.gif',
-    hash: '#120'
-  },
+    hash: '#120',
+    contrib:"https://github.com/tonyjaramillo.png"},
   {
     name: 'X-tocat',
     srcUrl: 'https://octodex.github.com/images/xtocat.jpg',
-    hash: '#36'
+    hash: '#36',
+    contrib:"https://github.com/cameronmcefee.png" 
   },
   {
     name: 'Saritocat',
     srcUrl: 'https://octodex.github.com/images/saritocat.png',
-    hash: '#114'
+    hash: '#114',
+    contrib:"https://github.com/JohnCreek.png"
   },
   {
     name: 'Yaktocat',
     srcUrl: 'https://octodex.github.com/images/yaktocat.png',
-    hash: '#109'
+    hash: '#109',
+    contrib:"https://github.com/jeejkang.png" 
   },
   {
     name: 'Dunetocat',
     srcUrl: 'https://octodex.github.com/images/dunetocat.png',
-    hash: '#105'
+    hash: '#105',
+    contrib:"https://github.com/JohnCreek.png"
   },
   {
     name: 'Ironcat',
     srcUrl: 'https://octodex.github.com/images/ironcat.jpg',
-    hash: '#25'
+    hash: '#25',
+    contrib:"https://github.com/cameronmcefee.png"
   },
   {
     name: 'Murikamicat',
     srcUrl: 'https://octodex.github.com/images/murakamicat.png',
-    hash: '#83'
+    hash: '#83',
+    contrib:"https://github.com/billyroh.png"
   }
 ]
 
@@ -91,14 +106,19 @@ class App extends Component {
     return (
       <>
         <NavBar />
-        <div class="container">
-          <section class="main-body">
+        <div className="container">
+          <section className="main-body">
             <ul>
               {catCharactersList.map(character => {
-                return <CatCharacter 
-                name={catCharactersList.name}
-                src={catCharactersList.srcUrl}
-                hashNumber={catCharactersList.hash} />
+                return (
+                  <CatCharacter
+                    key={character.name}
+                    names={character.name}
+                    src={character.srcUrl}
+                    hashNumber={character.hash}
+                    contributor={character.contrib}
+                  />
+                )
               })}
             </ul>
           </section>

@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
 
-
-
-
 class CatCharacter extends Component {
   render() {
     return (
       <li>
-        <div class="outer-image">
-          <img class="image-area" src={this.props.src} />
-          <section class="caption">
+        <div className="outer-image">
+          <img className="image-area" src={this.props.src} />
+          <section className="caption">
             <p>{this.props.hashNumber}</p>
-            <div class="name-pic">
+            <div className="name-pic">
               <p>
-                the <em>{this.props.name}</em> by
+                the <em>{this.props.names}</em> by
               </p>
-              <img src="https://github.com/cameronmcefee.png" />
+              <img src={this.props.contributor} />
             </div>
           </section>
         </div>
@@ -23,4 +20,4 @@ class CatCharacter extends Component {
     )
   }
 }
-export default CatCharacter;
+export default CatCharacter
