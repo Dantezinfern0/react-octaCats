@@ -59,7 +59,7 @@ nav img {
   border-radius: 3px;
 }
 
-/* .image-area::after {
+.image-area::after {
   content: '';
   height: 0;
   width: 0;
@@ -69,7 +69,7 @@ nav img {
   position: relative;
   right: 6px;
   top: 0;
-} */
+}
 
 .caption {
   display: flex;
