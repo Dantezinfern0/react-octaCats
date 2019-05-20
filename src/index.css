@@ -7,7 +7,9 @@ body {
   min-height: 100%;
   font: 16px / 1 sans-serif;
 }
-
+ul {
+  list-style: none;
+}
 .header {
   background: #f3f3f3;
   display: flex;

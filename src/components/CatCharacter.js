@@ -10,7 +10,7 @@ class CatCharacter extends Component {
         <div class="outer-image">
           <img class="image-area" src={this.props.src} />
           <section class="caption">
-            <p>{this.props.hash}</p>
+            <p>{this.props.hashNumber}</p>
             <div class="name-pic">
               <p>
                 the <em>{this.props.name}</em> by
@@ -23,4 +23,4 @@ class CatCharacter extends Component {
     )
   }
 }
-export default CatCharacter
+export default CatCharacter;
