@@ -116,7 +116,7 @@ class App extends Component {
                     key={character.name}
                     names={character.name}
                     src={character.srcUrl}
-                    hashNumber={character.hash}
+                    hashNumber={character.hashNumber}
                     contributor={character.contrib}
                   />
                 )
