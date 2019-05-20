@@ -1,211 +1,123 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import CatCharacter from './components/CatCharacter'
+
+const catCharactersList = [
+  {
+    name: 'Octobi Wan Catnobi',
+    src: 'https://octodex.github.com/images/octobiwan.jpg',
+    hash: '#3'
+  },
+  {
+    name: 'Stormtroopocat',
+    src: 'https://octodex.github.com/images/stormtroopocat.png',
+    hash: '#86'
+  },
+  {
+    name: 'Doctocat Brown',
+    src: 'https://octodex.github.com/images/doctocat-brown.jpg',
+    hash: '#68'
+  },
+  {
+    name: 'Octocat De Los Muertos',
+    src: 'https://octodex.github.com/images/octocat-de-los-muertos.jpg',
+    hash: '#56'
+  },
+  {
+    name: 'Dunetocat',
+    src: 'https://octodex.github.com/images/dunetocat.png',
+    hash: '#105'
+  },
+  {
+    name: 'Daftpunktocat-Thomas',
+    src: 'https://octodex.github.com/images/daftpunktocat-thomas.gif',
+    hash: '#102'
+  },
+  {
+    name: 'Heisencat',
+    src: 'https://octodex.github.com/images/heisencat.png',
+    hash: '#78'
+  },
+  {
+    name: 'Boxertocat',
+    src: 'https://octodex.github.com/images/boxertocat_octodex.jpg',
+    hash: '#143'
+  },
+  {
+    name: 'Justicetocat',
+    src: 'https://octodex.github.com/images/justicetocat.jpg',
+    hash: '#136'
+  },
+  {
+    name: 'Gobble-o-tron',
+    src: 'https://octodex.github.com/images/gobbleotron.gif',
+    hash: '#120'
+  },
+  {
+    name: 'X-tocat',
+    src: 'https://octodex.github.com/images/xtocat.jpg',
+    hash: '#36'
+  },
+  {
+    name: 'Saritocat',
+    src: 'https://octodex.github.com/images/saritocat.png',
+    hash: '#114'
+  },
+  {
+    name: 'Yaktocat',
+    src: 'https://octodex.github.com/images/yaktocat.png',
+    hash: '#109'
+  },
+  {
+    name: 'Dunetocat',
+    src: 'https://octodex.github.com/images/dunetocat.png',
+    hash: '#105'
+  },
+  {
+    name: 'Ironcat',
+    src: 'https://octodex.github.com/images/ironcat.jpg',
+    hash: '#25'
+  },
+  {
+    name: 'Murikamicat',
+    src: 'https://octodex.github.com/images/murakamicat.png',
+    hash: '#83'
+  }
+]
 
 class App extends Component {
   render() {
-    return <HelloWorld />
-    
-
-
-
-
-  
-
-  <div class="container">
-    <section class="main-body">
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/octobiwan.jpg" />
-        <section class="caption">
-          <p>#3</p>
-          <div class="name-pic">
-            <p>the <em>Octobi Wan Catnobi</em> by</p>
-            <img src="https://github.com/cameronmcefee.png" />
+    return (
+      <>
+        <nav class="header">
+          <img src="./images/logo (1).png" />
+          <div class="top-links">
+            <a>RSS</a>
+            <a>FAQ</a>
+            <a>Back to GitHub</a>
           </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src=" https://octodex.github.com/images/stormtroopocat.png" />
-        <section class="caption">
-          <p>#86></p>
-          <div class="name-pic">
-            <p>the <em>Stormtroopocat</em> by</p>
-            <img src="https://github.com/jeejkang.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/doctocat-brown.jpg" />
-        <section class="caption">
-          <p>#68</p>
-          <div class="name-pic">
-            <p>the <em>Doctocat Brown</em> by</p>
-            <img src="https://github.com/jonrohan.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/octocat-de-los-muertos.jpg" />
-        <section class="caption">
-          <p>#56</p>
-          <div class="name-pic">
-            <p>the <em>Octocat De Los Muertos</em> by</p>
-            <img src="https://github.com/cameronmcefee.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/dunetocat.png" />
-        <section class="caption">
-          <p>#105</p>
-          <div class="name-pic">
-            <p>the <em>Dunetocat</em> by</p>
-            <img src="https://github.com/JohnCreek.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/daftpunktocat-thomas.gif" />
-        <section class="caption">
-          <p>#102</p>
-          <div class="name-pic">
-            <p>the <em>Daftpunktocat-Thomas</em> by</p>
-            <img src="https://github.com/jeejkang.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/heisencat.png" />
-        <section class="caption">
-          <p>#78</p>
-          <div class="name-pic">
-            <p>the <em>Heisencat</em> by</p>
-            <img src="https://github.com/jonrohan.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/boxertocat_octodex.jpg" />
-        <section class="caption">
-          <p>#143</p>
-          <div class="name-pic">
-            <p>the <em>Boxertocat</em> by</p>
-            <img src="https://github.com/rubyjazzy.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/justicetocat.jpg" />
-        <section class="caption">
-          <p>#136</p>
-          <div class="name-pic">
-            <p>the <em>Justicetocat</em> by</p>
-            <img src="https://github.com/heyhayhay.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/gobbleotron.gif" />
-        <section class="caption">
-          <p>#120</p>
-          <div class="name-pic">
-            <p>the <em>Gobble-o-tron</em> by</p>
-            <img src="https://github.com/JohnCreek.png" />
-            <img src="https://github.com/tonyjaramillo.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/xtocat.jpg" />
-        <section class="caption">
-          <p>#36</p>
-          <div class="name-pic">
-            <p>the X-tocat by</p>
-            <img src="https://github.com/cameronmcefee.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/saritocat.png" />
-        <section class="caption">
-          <p>#114</p>
-          <div class="name-pic">
-            <p>the Saritocat by</p>
-            <img src="https://github.com/JohnCreek.png">
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/yaktocat.png" />
-        <section class="caption">
-          <p>#109</p>
-          <div class="name-pic">
-            <p>the Yaktocat by</p>
-            <img src="https://github.com/jeejkang.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/dunetocat.png" />
-        <section class="caption">
-          <p>#105</p>
-          <div class="name-pic">
-            <p>the Dunetocat by</p>
-            <img src="https://github.com/JohnCreek.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/ironcat.jpg" />
-        <section class="caption">
-          <p>#25</p>
-          <div class="name-pic">
-            <p>the IronCat by</p>
-            <img src="https://github.com/cameronmcefee.png" />
-          </div>
-        </section>
-      </div>
-
-      <div class="outer-image">
-        <img class="image-area" src="https://octodex.github.com/images/murakamicat.png" />
-        <section class="caption">
-          <p>#83</p>
-          <div class="name-pic">
-            <p>the Murakamicat by</p>
-            <img src="https://github.com/billyroh.png" />
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <footer>
-      <div class="bottom-links">
-        <p>RSS</p>
-        <p>FAQ</p>
-      </div>
-      <i class="fab fa-github"></i>
-      <div class="copyright">
-        <p>© 2013 – 2018 GitHub, Inc.</p>
-        <p>All rights reserved.</p>
-      </div>
-    </footer>
-
-  </div>
-
-
+        </nav>
+        <div class="container">
+          <section class="main-body">
+            <ul>
+              {catCharactersList.map(character => {
+                return <CatCharacter name={catCharactersList.name} />
+              })}
+            </ul>
+          </section>
+          <footer>
+            <div class="bottom-links">
+              <p>RSS</p>
+              <p>FAQ</p>
+            </div>
+            <i class="fab fa-github" />
+            <div class="copyright">
+              <p>© 2013 – 2018 GitHub, Inc.</p>
+              <p>All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+      </>
+    )
   }
 }
 
