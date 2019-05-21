@@ -12,7 +12,7 @@ class CatCharacter extends Component {
               <p>
                 the <em>{this.props.names}</em> by
               </p>
-              <img src={this.props.contributor} />
+              <img src={this.props.contributor.image} />
             </div>
           </section>
         </div>
