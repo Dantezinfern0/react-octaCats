@@ -7,7 +7,7 @@ class CatCharacter extends Component {
         <div className="outer-image">
           <img className="image-area" src={this.props.src} />
           <section className="caption">
-            <p>{this.props.hashNumber}</p>
+            <p>{this.props.number}</p>
             <div className="name-pic">
               <p>
                 the <em>{this.props.names}</em> by

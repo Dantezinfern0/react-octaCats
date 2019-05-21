@@ -2,24 +2,40 @@ import React, { Component } from 'react'
 import CatCharacter from './components/CatCharacter'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
-import catCharactersList from './data/octocats.json'
+// import catCharactersList from './data/octocats.json'
 
 class App extends Component {
+  state = {
+    dataList: []
+  }
+  componentDidMount() {
+    console.log("component mounted")
+    fetch('https://sdg-octodex.herokuapp.com/')
+    .then(resp => {
+      return resp.json()
+    })
+    .then(json => {
+      this.setState({
+        dataList: json.data
+      })
+    })
+  }
   render() {
+    console.log('rendered')
     return (
       <>
         <NavBar />
         <div className="container">
           <section className="main-body">
             <ul>
-              {catCharactersList.data.map(character => {
+              {this.state.dataList.map(character => {
                 return (
                   <CatCharacter
                     key={character.name}
                     names={character.name}
                     src={character.image}
-                    hashNumber={character.number}
-                    contributor={character.link}
+                    number={character.number}
+                    contributor={character.authors[1]}
                   />
                 )
               })}
