@@ -25,8 +25,8 @@ class App extends Component {
       <>
         <NavBar />
         <div className="container">
-          <section className="main-body">
-            <ul>
+          <section>
+            <ul  className="main-body">
               {this.state.dataList.map(character => {
                 return (
                   <CatCharacter
