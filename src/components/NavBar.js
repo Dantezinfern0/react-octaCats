@@ -9,7 +9,7 @@ class NavBar extends Component {
           <div className="top-links">
             <a href="#">RSS</a>
             <a href="#">FAQ</a>
-            <a href="#">Back to GitHub</a>
+            <a href="https://github.com/Dantezinfern0">Back to GitHub</a>
           </div>
         </nav>
       </div>

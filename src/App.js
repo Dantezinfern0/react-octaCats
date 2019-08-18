@@ -13,6 +13,7 @@ class App extends Component {
         return resp.json()
       })
       .then(json => {
+        console.log(json.data)
         this.setState({
           dataList: json.data
         })
