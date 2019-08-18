@@ -3,8 +3,11 @@ import CatCharacter from './components/CatCharacter'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 class App extends Component {
-  state = {
-    dataList: []
+  constructor(props) {
+    super(props)
+    this.state = {
+      dataList: []
+    }
   }
   componentDidMount() {
     console.log('component mounted')
@@ -26,7 +29,7 @@ class App extends Component {
         <NavBar />
         <div className="container">
           <section>
-            <ul  className="main-body">
+            <ul className="main-body">
               {this.state.dataList.map(character => {
                 return (
                   <CatCharacter
