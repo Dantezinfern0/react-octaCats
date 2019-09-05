@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 
 class CatCharacter extends Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       <li>
         <div className="outer-image">
-          <img className="image-area" src={this.props.src} />
+          <img alt="various types of octopus-cats" className="image-area" src={this.props.src} />
           <section className="caption">
             <p>{this.props.number}</p>
             <div className="name-pic">
@@ -16,7 +13,7 @@ class CatCharacter extends Component {
                 the <em>{this.props.names}</em> by
               </p>
               <a href={this.props.contributor.link}>
-              <img src={this.props.contributor.image} />
+              <img alt={`${this.props.names} custom author's logo`} src={this.props.contributor.image} />
               </a>
             </div>
           </section>
