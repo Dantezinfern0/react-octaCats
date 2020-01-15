@@ -13,7 +13,7 @@ class CatCharacter extends Component {
                 the <em>{this.props.names}</em> by
               </p>
               <a href={this.props.contributor.link}>
-              <img alt={`${this.props.names} custom author's logo`} src={this.props.contributor.image} />
+              <img alt={`Author ${this.props.names}'s custom logo`} src={this.props.contributor.image} />
               </a>
             </div>
           </section>

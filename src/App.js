@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <>
         <NavBar />
-        <div className="container">
+        <div>
           <section>
             <ul className="main-body">
               {this.state.dataList.map(character => {
