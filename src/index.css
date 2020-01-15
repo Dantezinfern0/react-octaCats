@@ -6,6 +6,7 @@ body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+  background-color: antiquewhite;
 }
 ul {
   list-style: none;
@@ -134,14 +135,14 @@ i {
   margin-left: 5px;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 375px) {
   .header {
     justify-content: center;
     align-content: center;
   }
-.title-name {
-  padding-left: 0;
-}
+  .title-name {
+    padding-left: 0;
+  }
   .header img {
     padding: 15px 0 0;
   }
