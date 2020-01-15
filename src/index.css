@@ -51,7 +51,9 @@ nav img {
   border-bottom: 1px solid #cacaca;
   margin: 0 12px 22px;
 }
-
+.title-name {
+  padding-left: 10rem;
+}
 .image-area {
   width: 424px;
   height: 424px;
@@ -137,7 +139,9 @@ i {
     justify-content: center;
     align-content: center;
   }
-
+.title-name {
+  padding-left: 0;
+}
   .header img {
     padding: 15px 0 0;
   }

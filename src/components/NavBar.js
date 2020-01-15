@@ -5,6 +5,7 @@ class NavBar extends Component {
     return (
       <div>
         <nav className="header">
+        <h1 className="title-name">The Octo-Cat Roledex!</h1>
           <div className="top-links">
             <a href="https://github.com/Dantezinfern0">Back to GitHub</a>
           </div>
