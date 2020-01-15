@@ -10,7 +10,7 @@ class CatCharacter extends Component {
             <p>{this.props.number}</p>
             <div className="name-pic">
               <p>
-                the <em>{this.props.names}</em> by
+                 <em>{this.props.names}</em> by
               </p>
               <a href={this.props.contributor.link}>
               <img alt={`Author ${this.props.names}'s custom logo`} src={this.props.contributor.image} />

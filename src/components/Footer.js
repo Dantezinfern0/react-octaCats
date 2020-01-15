@@ -5,10 +5,6 @@ class Footer extends Component {
     return (
       <div>
         <footer>
-          <div className="bottom-links">
-            <p>RSS</p>
-            <p>FAQ</p>
-          </div>
           <i className="fab fa-github" />
           <div className="copyright">
             <p>© 2013 – 2018 GitHub, Inc.</p>
