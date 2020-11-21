@@ -2,13 +2,13 @@
   "private": true,
   "name": "react-i",
   "scripts": {
-    "start": "npm start",
-    "build": "npm build",
-    "predeploy": "npm build",
-    "deploy": "npm deploy --prod --dir=build",
-    "setup-deploy": "app-app --deploy && npm deploy",
-    "test": "npm test",
-    "eject": "npm eject",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "react-scripts build",
+    "deploy": "netlify deploy --prod --dir=build",
+    "setup-deploy": "app-app --deploy && yarn deploy",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "postdeploy": "echo 'Your site was deployed to https://react-i-danteharasz.netlify.com'"
   },
   "browserslist": [
