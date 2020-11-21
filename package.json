@@ -5,7 +5,7 @@
     "start": "npm start",
     "build": "npm build",
     "predeploy": "npm build",
-    "deploy": "netlify deploy --prod --dir=build",
+    "deploy": "npm deploy --prod --dir=build",
     "setup-deploy": "app-app --deploy && npm deploy",
     "test": "npm test",
     "eject": "npm eject",
